@@ -1,5 +1,6 @@
 .index {
     .main {
+        background-color: #000000;
         .banner {
             max-width: 1920px;
             width: 100%;
@@ -92,6 +93,247 @@
 
                             span {
                                 color: #FFFFFF;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .produce2 {
+            .produce-bg {
+                background-image: url(/picture/banner2-pc.png);
+                @include bg;
+
+                .container {
+                    max-width: 1296px;
+                    margin: 0 auto;
+                    padding: 60px 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 48px;
+
+                    @include w1023 {
+                        padding: 60px 12px;
+                    }
+
+                    .title {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px;
+                        color: #FFFFFF;
+
+                        .t1 {
+                            font-size: 32px;
+                            font-weight: bold;
+                        }
+                    }
+
+                    .produce-big-box {
+                        display: flex;
+                        gap: 24px;
+
+                        @include w1023 {
+                            flex-direction: column;
+                            align-items: center;
+                        }
+
+                        .left {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 24px;
+
+                            .left-up {
+                                display: flex;
+                                gap: 24px;
+                                @include w1023 {
+                                    flex-direction: column;
+                                    align-items: center;
+                                }
+
+                                img {
+                                    max-width: 306px;
+                                    width: 100%;
+                                    height: auto;
+                                    transition: transform 0.3s ease;
+
+                                    &:hover {
+                                        transform: scale(1.05);
+                                    }
+                                }
+
+                                .left-up-two {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 24px;
+            
+
+                                    img {
+                                        max-width: 306px;
+                                        width: 100%;
+                                        height: auto;
+                                        transition: transform 0.3s ease;
+
+                                        &:hover {
+                                            transform: scale(1.05);
+                                        }
+                                        @include w1023{
+                                            img{
+                                                max-width: 336px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .left-dw {
+                                
+
+                                img {
+                                    max-width: 636px;
+                                    width: 100%;
+                                    height: auto;
+                                    transition: transform 0.3s ease;
+
+                                    &:hover {
+                                        transform: scale(1.05);
+                                    }
+                                    
+                                }
+                            }
+                        }
+
+                        .right {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 24px;
+
+                            img {
+                                max-width: 416px;
+                                width: 100%;
+                                height: auto;
+                                transition: transform 0.3s ease;
+
+                                &:hover {
+                                    transform: scale(1.05);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .form{
+            .form-bg{
+                background-color: #404040;
+                .form-container{
+                    padding: 60px 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 24px;
+                    @include mobile{
+                        flex-direction: column-reverse;
+                    }
+                    .left{
+                        display: flex;
+                        gap: 24px;
+                        .l-l{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 24px;
+                            padding-top: 48px;
+                            img {
+                                    max-width: 306px;
+                                    width: 100%;
+                                    height: auto;
+                                    transition: transform 0.3s ease;
+
+                                    &:hover {
+                                        transform: scale(1.05);
+                                    }
+                                    
+                                }
+                        }
+                        .l-r{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 24px;
+                            padding-bottom: 48px;
+                            img {
+                                    max-width: 306px;
+                                    width: 100%;
+                                    height: auto;
+                                    transition: transform 0.3s ease;
+
+                                    &:hover {
+                                        transform: scale(1.05);
+                                    }
+                                    
+                                }
+                        }
+                    }
+                    .right{
+                        max-width: 636px;
+                        .text{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            gap: 24px;
+                            color: #FFFFFF;
+                            padding-bottom: 48px;
+                            .title{
+                                font-size: 32px;
+                                font-family: bold;
+
+                            }
+                        }
+                        .form-box{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 24px;
+                            .form-group{
+                                display: flex;
+                                flex-direction: column;
+                                gap: 4px;
+                                color: #FFFFFF;
+                                label{
+                                    @include mobile{
+                                        display: none;
+                                    }
+                                }
+                                input{
+                                    padding: 16px 12px;
+                                    @include mobile{
+                                        display: none;
+                                    }
+                                }
+                                .input-sm{
+                                    display: none;
+                                    @include mobile{
+                                        display: flex;
+                                    }
+                                }
+                            }
+                            button{
+                                padding: 6px 12px;
+                                background-color: #FFFFFF;
+                                color: #000000;
+                                border-radius: 4px;
+                                margin-left: auto;
+                                transition: transform 0.3s ease;
+
+                                    &:hover {
+                                        transform: scale(1.05);
+                                    }
+                                @include mobile{
+                                    padding: 16px 0;
+                                    width: 100%;
+                                }
                             }
                         }
                     }
