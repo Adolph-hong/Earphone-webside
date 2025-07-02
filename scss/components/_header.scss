@@ -1,75 +1,80 @@
-.nav-bg {
-    background-color: #ffffff;
+.header {
+    .nav-bg {
+        background-color: #ffffff;
 
-    .nav {
-        max-width: 1920px;
-        padding: 16px 80px;
-        display: flex;
-        justify-content: space-between;
-        margin: 0 auto;
-
-        @include w1023 {
-            padding: 16px 40px;
-        }
-
-        @include mobile {
-            padding: 16px 12px;
-        }
-
-        .nav-list {
+        .nav {
+            max-width: 1920px;
+            padding: 16px 80px;
             display: flex;
-            gap: 48px;
-            align-items: center;
+            justify-content: space-between;
+            margin: 0 auto;
 
             @include w1023 {
-                gap: 24px;
+                padding: 16px 40px;
             }
 
             @include mobile {
-                display: none;
+                padding: 16px 12px;
             }
 
-            li {
-                color: #000000;
-                transition: transform 0.3s ease;
-
-                &:hover {
-                    transform: scale(1.5);
-                }
-
-                a {
-                    padding: 8px;
-                }
-            }
-
-            .home {
-                border-bottom: 1px solid #000000;
-            }
-
-        }
-
-        .nav-img {
-            @include mobile{
+            .nav-list {
                 display: flex;
-                gap: 12px;
-            }
-            .search {
-                transition: transform 0.2s ease;
+                gap: 48px;
+                align-items: center;
 
-                &:hover {
-                    transform: scale(1.3);
+                @include w1023 {
+                    gap: 24px;
+                }
+
+                @include mobile {
+                    display: none;
+                }
+
+                li {
+                    color: #000000;
+                    transition: transform 0.3s ease;
+
+                    &:hover {
+                        transform: scale(1.5);
+                    }
+
+                    a {
+                        padding: 8px;
+                    }
+                }
+
+                .home {
+                    border-bottom: 1px solid #000000;
                 }
 
             }
-            .burger{
-                display: none;
-                @include mobile{
-                    display: block;
+
+            .nav-img {
+                @include mobile {
+                    display: flex;
+                    gap: 12px;
+                }
+
+                .search {
                     transition: transform 0.2s ease;
 
-                &:hover {
-                    transform: scale(1.3);
+                    &:hover {
+                        transform: scale(1.5);
+                    }
+
                 }
+
+                .burger {
+                    display: none;
+
+                    @include mobile {
+                        display: block;
+                        transition: transform 0.2s ease;
+
+                        &:hover {
+                            transform: scale(1.5);
+                        }
+                    }
                 }
             }
         }
