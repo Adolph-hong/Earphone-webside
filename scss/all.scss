@@ -1,0 +1,10 @@
+// 預設
+@import "base/default";
+@import "base/mixin";
+
+// 元件
+@import "components/header";
+@import "components/footer";
+
+// 頁面
+@import "page/index.scss";

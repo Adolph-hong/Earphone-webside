@@ -1,0 +1,77 @@
+.footer {
+    .footer-bg {
+        background-color: #000000;
+
+        .container {
+            max-width: 1296px;
+            padding: 60px 80px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 24px;
+            margin: 0 auto;
+            @include mobile{
+                padding: 60px 12px;
+                align-items: flex-start;
+            }
+
+            .footer-dw {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                @include mobile{
+                    align-items: flex-start;
+                    gap: 24px;
+                }
+                .icon-box{
+                    display: flex;
+                    gap: 40px;
+                    a{
+                        transition: transform 0.3s ease;
+
+                            &:hover {
+                                transform: scale(1.5);
+                            }
+                    }
+                }
+
+                .line{
+                    width: 100px;
+                    height: 1px;
+                    background-color: #FFFFFF;
+                    margin: 48px 0;
+                    @include mobile{
+                        display: none;
+                    }
+                }
+
+                .footer-nav-box {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    @include mobile{
+                        flex-direction: column;
+                        gap: 40px;
+                    }
+                    .footer-nav {
+                        display: flex;
+                        gap: 24px;
+
+                        li {
+                            color: #FFFFFF;
+                            transition: transform 0.3s ease;
+
+                            &:hover {
+                                transform: scale(1.2);
+                            }
+                        }
+                    }
+                    .text{
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+    }
+}

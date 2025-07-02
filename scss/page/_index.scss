@@ -1,0 +1,344 @@
+.index {
+    .main {
+        background-color: #000000;
+        .banner {
+            max-width: 1920px;
+            width: 100%;
+            height: 634px;
+            margin: 0 auto;
+            position: relative;
+            background-image: url(/picture/banner1-pc.png);
+            @include bg;
+
+            @include mobile {
+                background-image: url(/picture/banner1-sm.png);
+            }
+
+
+            .banner-text-box {
+                max-width: 636px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                color: #FFFFFF;
+                position: absolute;
+                transform: translateY(-50%);
+                top: 50%;
+                right: 20px;
+                z-index: 1;
+
+                @include mobile {
+                    left: 0;
+                    padding: 0 12px;
+                    top: 80%;
+                }
+
+                .title {
+                    font-size: 40px;
+                    font-weight: bold;
+                    padding-bottom: 16px;
+                }
+
+                .date {
+                    padding-bottom: 3px;
+                }
+            }
+        }
+
+        .produce {
+            .produce-bg {
+                background-color: #2B2B2B;
+
+                .container {
+                    max-width: 1296px;
+                    margin: 0 auto;
+                    padding: 60px 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+
+                    .title {
+                        font-size: 32px;
+                        font-weight: bold;
+                        color: #FFFFFF;
+                        text-align: center;
+                        margin-bottom: 48px;
+                    }
+
+                    .card-box {
+                        display: flex;
+                        gap: 24px;
+
+                        @include mobile {
+                            flex-direction: column;
+                            gap: 48px;
+                        }
+
+                        .card {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 24px;
+
+                            img {
+                                max-width: 416px;
+                                width: 100%;
+                                height: auto;
+                                transition: transform 0.3s ease;
+
+                                &:hover {
+                                    transform: scale(1.05);
+                                }
+                            }
+
+                            span {
+                                color: #FFFFFF;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .produce2 {
+            .produce-bg {
+                background-image: url(/picture/banner2-pc.png);
+                @include bg;
+
+                .container {
+                    max-width: 1296px;
+                    margin: 0 auto;
+                    padding: 60px 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 48px;
+
+                    @include w1023 {
+                        padding: 60px 12px;
+                    }
+
+                    .title {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px;
+                        color: #FFFFFF;
+
+                        .t1 {
+                            font-size: 32px;
+                            font-weight: bold;
+                        }
+                    }
+
+                    .produce-big-box {
+                        display: flex;
+                        gap: 24px;
+
+                        @include w1023 {
+                            flex-direction: column;
+                            align-items: center;
+                        }
+
+                        .left {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 24px;
+
+                            .left-up {
+                                display: flex;
+                                gap: 24px;
+                                @include w1023 {
+                                    flex-direction: column;
+                                    align-items: center;
+                                }
+
+                                img {
+                                    max-width: 306px;
+                                    width: 100%;
+                                    height: auto;
+                                    transition: transform 0.3s ease;
+
+                                    &:hover {
+                                        transform: scale(1.05);
+                                    }
+                                }
+
+                                .left-up-two {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 24px;
+            
+
+                                    img {
+                                        max-width: 306px;
+                                        width: 100%;
+                                        height: auto;
+                                        transition: transform 0.3s ease;
+
+                                        &:hover {
+                                            transform: scale(1.05);
+                                        }
+                                        @include w1023{
+                                            img{
+                                                max-width: 336px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .left-dw {
+                                
+
+                                img {
+                                    max-width: 636px;
+                                    width: 100%;
+                                    height: auto;
+                                    transition: transform 0.3s ease;
+
+                                    &:hover {
+                                        transform: scale(1.05);
+                                    }
+                                    
+                                }
+                            }
+                        }
+
+                        .right {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 24px;
+
+                            img {
+                                max-width: 416px;
+                                width: 100%;
+                                height: auto;
+                                transition: transform 0.3s ease;
+
+                                &:hover {
+                                    transform: scale(1.05);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .form{
+            .form-bg{
+                background-color: #404040;
+                .form-container{
+                    padding: 60px 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 24px;
+                    @include mobile{
+                        flex-direction: column-reverse;
+                    }
+                    .left{
+                        display: flex;
+                        gap: 24px;
+                        .l-l{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 24px;
+                            padding-top: 48px;
+                            img {
+                                    max-width: 306px;
+                                    width: 100%;
+                                    height: auto;
+                                    transition: transform 0.3s ease;
+
+                                    &:hover {
+                                        transform: scale(1.05);
+                                    }
+                                    
+                                }
+                        }
+                        .l-r{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 24px;
+                            padding-bottom: 48px;
+                            img {
+                                    max-width: 306px;
+                                    width: 100%;
+                                    height: auto;
+                                    transition: transform 0.3s ease;
+
+                                    &:hover {
+                                        transform: scale(1.05);
+                                    }
+                                    
+                                }
+                        }
+                    }
+                    .right{
+                        max-width: 636px;
+                        .text{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            gap: 24px;
+                            color: #FFFFFF;
+                            padding-bottom: 48px;
+                            .title{
+                                font-size: 32px;
+                                font-family: bold;
+
+                            }
+                        }
+                        .form-box{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 24px;
+                            .form-group{
+                                display: flex;
+                                flex-direction: column;
+                                gap: 4px;
+                                color: #FFFFFF;
+                                label{
+                                    @include mobile{
+                                        display: none;
+                                    }
+                                }
+                                input{
+                                    padding: 16px 12px;
+                                    @include mobile{
+                                        display: none;
+                                    }
+                                }
+                                .input-sm{
+                                    display: none;
+                                    @include mobile{
+                                        display: flex;
+                                    }
+                                }
+                            }
+                            button{
+                                padding: 6px 12px;
+                                background-color: #FFFFFF;
+                                color: #000000;
+                                border-radius: 4px;
+                                margin-left: auto;
+                                transition: transform 0.3s ease;
+
+                                    &:hover {
+                                        transform: scale(1.05);
+                                    }
+                                @include mobile{
+                                    padding: 16px 0;
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
