@@ -1,0 +1,102 @@
+.index {
+    .main {
+        .banner {
+            max-width: 1920px;
+            width: 100%;
+            height: 634px;
+            margin: 0 auto;
+            position: relative;
+            background-image: url(/picture/banner1-pc.png);
+            @include bg;
+
+            @include mobile {
+                background-image: url(/picture/banner1-sm.png);
+            }
+
+
+            .banner-text-box {
+                max-width: 636px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                color: #FFFFFF;
+                position: absolute;
+                transform: translateY(-50%);
+                top: 50%;
+                right: 20px;
+                z-index: 1;
+
+                @include mobile {
+                    left: 0;
+                    padding: 0 12px;
+                    top: 80%;
+                }
+
+                .title {
+                    font-size: 40px;
+                    font-weight: bold;
+                    padding-bottom: 16px;
+                }
+
+                .date {
+                    padding-bottom: 3px;
+                }
+            }
+        }
+
+        .produce {
+            .produce-bg {
+                background-color: #2B2B2B;
+
+                .container {
+                    max-width: 1296px;
+                    margin: 0 auto;
+                    padding: 60px 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+
+                    .title {
+                        font-size: 32px;
+                        font-weight: bold;
+                        color: #FFFFFF;
+                        text-align: center;
+                        margin-bottom: 48px;
+                    }
+
+                    .card-box {
+                        display: flex;
+                        gap: 24px;
+
+                        @include mobile {
+                            flex-direction: column;
+                            gap: 48px;
+                        }
+
+                        .card {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 24px;
+
+                            img {
+                                max-width: 416px;
+                                width: 100%;
+                                height: auto;
+                                transition: transform 0.3s ease;
+
+                                &:hover {
+                                    transform: scale(1.05);
+                                }
+                            }
+
+                            span {
+                                color: #FFFFFF;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

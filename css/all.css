@@ -211,4 +211,50 @@ a {
 }
 .index .main .banner .banner-text-box .date {
   padding-bottom: 3px;
+}
+.index .main .produce .produce-bg {
+  background-color: #2B2B2B;
+}
+.index .main .produce .produce-bg .container {
+  max-width: 1296px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.index .main .produce .produce-bg .container .title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.index .main .produce .produce-bg .container .card-box {
+  display: flex;
+  gap: 24px;
+}
+@media (max-width: 768px) {
+  .index .main .produce .produce-bg .container .card-box {
+    flex-direction: column;
+    gap: 48px;
+  }
+}
+.index .main .produce .produce-bg .container .card-box .card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.index .main .produce .produce-bg .container .card-box .card img {
+  max-width: 416px;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+.index .main .produce .produce-bg .container .card-box .card img:hover {
+  transform: scale(1.05);
+}
+.index .main .produce .produce-bg .container .card-box .card span {
+  color: #FFFFFF;
 }/*# sourceMappingURL=all.css.map */
