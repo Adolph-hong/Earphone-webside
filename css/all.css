@@ -178,14 +178,14 @@ a {
   height: 634px;
   margin: 0 auto;
   position: relative;
-  background-image: url(/picture/banner1-pc.png);
+  background-image: url(../picture/banner1-pc.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 @media (max-width: 768px) {
   .index .main .banner {
-    background-image: url(/picture/banner1-sm.png);
+    background-image: url(../picture/banner1-sm.png);
   }
 }
 .index .main .banner .banner-text-box {
