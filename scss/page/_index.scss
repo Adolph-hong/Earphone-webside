@@ -7,11 +7,11 @@
             height: 634px;
             margin: 0 auto;
             position: relative;
-            background-image: url(/picture/banner1-pc.png);
+            background-image: url(../picture/banner1-pc.png);
             @include bg;
 
             @include mobile {
-                background-image: url(/picture/banner1-sm.png);
+                background-image: url(../picture/banner1-sm.png);
             }
 
 
